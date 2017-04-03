@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "ream build"
+  },
+  "dependencies": {
+    "ream": "beta"
+  }
+}
