@@ -2,7 +2,7 @@ const http = require('http')
 const ream = require('ream')
 
 const app = ream({
-  dev: false
+  dev: true
 })
 
 console.log('> Starting...')

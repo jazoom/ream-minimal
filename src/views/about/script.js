@@ -1,5 +1,9 @@
 'use strict';
 
 export default {
-  name: 'about'
+  name: 'about',
+
+  head: {
+    title: 'About'
+  }
 }

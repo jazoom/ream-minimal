@@ -1,5 +1,9 @@
 'use strict';
 
 export default {
-  name: 'home'
+  name: 'home',
+
+  head: {
+    title: 'Home'
+  }
 }
