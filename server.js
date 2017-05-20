@@ -2,8 +2,10 @@ const http = require('http')
 const ream = require('ream')
 
 const app = ream({
-  dev: true
-})
+  dev: process.env.NODE_ENV !== 'production',
+  html: { template: 'src/index.html' },
+  entry: 'src/index.js'
+});
 
 console.log('> Starting...')
 app.prepare()
