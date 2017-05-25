@@ -5,6 +5,6 @@
     "build": "ream build"
   },
   "dependencies": {
-    "ream": "v1.0.0-rc.2"
+    "ream": "v1.0.0-rc.3"
   }
 }

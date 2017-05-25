@@ -10,6 +10,7 @@ const Page3 = () => System.import('../views/page3/index.vue');
 Vue.use(Router);
 
 const createRouter = () => new Router({
+  mode: 'history',
   routes: [
     {
       path: '/', component: Home,
