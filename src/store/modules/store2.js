@@ -1,22 +1,24 @@
 'use strict';
 import * as types from '../actionTypes';
 
-export default {
+export default () => {
+  return {
 
-  state: {
-    testState2: false
-  },
+    state: {
+      testState2: false
+    },
 
-  mutations: {
-    setTestState2(state, { value }) {
-      state.testState2 = value;
+    mutations: {
+      setTestState2(state, { value }) {
+        state.testState2 = value;
+      }
+    },
+
+    actions: {
+      [types.ACTION2]({ commit, state }, payload) {
+        commit('setTestState2', payload);
+      }
     }
-  },
 
-  actions: {
-    [types.ACTION2]({ commit, state }, payload) {
-      commit('setTestState2', payload);
-    }
   }
-
 };
